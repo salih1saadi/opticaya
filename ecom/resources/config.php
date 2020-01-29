@@ -13,13 +13,15 @@ defined("UPLOAD_DIRECTORY") ? null : define("UPLOAD_DIRECTORY", __DIR__ . DS . "
 defined("TEMPLATE_BACK") ? null : define("TEMPLATE_BACK", __DIR__ . DS . "templates/back");
 //DB
 
-defined("DB_HOST") ? null : define("DB_HOST", "localhost");
+//mysql://b94dddc1b68e2c:6dcf8215@us-cdbr-iron-east-04.cleardb.net/heroku_8aa3f5994ede731?reconnect=true
 
-defined("DB_USER") ? null : define("DB_USER", "root");
+defined("DB_HOST") ? null : define("DB_HOST", "us-cdbr-iron-east-04.cleardb.net");
 
-defined("DB_PASS") ? null : define("DB_PASS",  "");
+defined("DB_USER") ? null : define("DB_USER", "b94dddc1b68e2c");
 
-defined("DB_NAME") ? null : define("DB_NAME", "ecom_db");
+defined("DB_PASS") ? null : define("DB_PASS",  "6dcf8215");
+
+defined("DB_NAME") ? null : define("DB_NAME", "heroku_8aa3f5994ede731");
 
 $conn = mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
 
